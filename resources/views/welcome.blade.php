@@ -15,12 +15,13 @@
             @endauth
         </div>
     @endif
-    <div class="content">
+    <div class="content flex-column-center">
         <img src="img/pizza-house.png" alt="Pizza House Logo">
         <div class="title m-b-md">
             <div>The North's Best Pizzas</div>
         </div>
-
+        <p class="mssg">{{session('mssg')}}</p>
+        <a href="/pizzas/create">Order a pizza</a>
     </div>
 </div>
 @endsection
