@@ -7,7 +7,9 @@
             <div>Pizza List</div>
         </div>
     @foreach ($pizzas as $pizza)
-        <p>{{$pizza['type']}} - {{$pizza['base']}}</p>
+        <div>
+            {{$pizza->name}} {{$pizza->type}} - {{$pizza->base}}
+        </div>
     @endforeach
     </div>
 </div>
