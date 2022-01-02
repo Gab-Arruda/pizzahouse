@@ -8,7 +8,7 @@
         </div>
     @foreach ($pizzas as $pizza)
         <div>
-            {{$pizza->name}} {{$pizza->type}} - {{$pizza->base}}
+            <h4><a href="/pizzas/{{$pizza->id}}">{{$pizza->name}}'s Pizza: {{$pizza->type}}</a></h4>
         </div>
     @endforeach
     </div>
