@@ -8,5 +8,5 @@ Route::get('/', function () {
 });
 
 Route::get('/pizzas', [PizzaController::class,'index']);
-
+Route::get('/pizzas/create', [PizzaController::class,'create']);
 Route::get('/pizzas/{id}', [PizzaController::class,'show']);
